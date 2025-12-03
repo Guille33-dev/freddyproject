@@ -13,4 +13,4 @@ __pycache__/
 
 # Archivos de configuración locales
 *.sqlite3
-*requirements.txt
+*.requirements.txt
