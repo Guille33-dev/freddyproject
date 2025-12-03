@@ -1,0 +1,11 @@
+{% extends "freddyapp/base.html" %}
+
+{% block content %}
+
+<h1> {{ anim.name }}</h1>
+<p><strong>Animal type:</strong> {{ anim.get_animal_display }}</p>
+<p><strong>Build date:</strong> {{ anim.build_date }}</p>
+<p><strong>Decommissioned:</strong> {{ anim.decommissioned }}</p>
+
+<p><a href="{% url 'animatronic_list' %}">Back to list</a></p>
+{% endblock %}

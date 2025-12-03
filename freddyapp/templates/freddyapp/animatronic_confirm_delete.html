@@ -1,0 +1,12 @@
+{% extends "freddyapp/base.html" %}
+
+{% block content %}
+<h1>Are you sure you want to delete this animatronic? ({{ object.name }})</h1>
+
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Yes</button>
+    <a href="{% url 'animatronic_list' %}">Cancel</a>
+</form>
+{% endblock %}
